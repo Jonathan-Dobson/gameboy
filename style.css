@@ -1,0 +1,204 @@
+@font-face {
+    font-family: Game;
+    src: url(Audiowide-Regular.ttf)
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    overflow: hidden;
+    font-family: "Game";
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+img {
+    height: 101vh;
+    position: absolute;
+    top: 0px;
+    z-index: 10;
+    opacity: 30%;
+}
+
+.gameboy-shape {
+    border-radius: 12px;
+    border-bottom-right-radius: 84px;
+}
+
+#container {
+    margin: 3px;
+    position: absolute;
+    top: 3px;
+    height: 602px;
+    width: 362px;
+    box-shadow: 0px -5px 59px 1px black;
+}
+
+#gameboy-base {
+    background-color: rgba(190, 185, 178, 0.8);
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0px 0px 20px 14px #ecd9bd;
+    padding: 4px;
+}
+
+#gameboy-base-inner {
+    background-color: rgba(190, 185, 178, 0.8);
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0px 0px 73px -25px #ffffff;
+}
+
+
+#screen-holder { 
+    position: absolute;
+    top: 0px;
+    width: 309px;
+    height: 234px;
+    margin: 48px 0px 8px 22px;
+    background-color: rgba(100, 93, 95, 0.8);
+    border-radius: 12px;
+    border-bottom-right-radius: 53px;
+}
+
+#lcd-screen {
+    position: absolute;
+    top: 0px;
+    margin: 75px 0px 0px 79px;
+    width: 196px;
+    height: 179px;
+    background-color: #2E441D;
+    border: 4px solid #493F0F;
+}
+
+.red-button{
+    position: absolute;
+    top: 0px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    box-shadow: -1px -2px 3px 0px black; 
+}
+
+.red-button-inside {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #7E2F49;
+    box-shadow: inset 0px -1px 3px 3px #BD6B80;
+}
+
+#red-btn-a {
+    margin: 368px 0px 0px 292px;
+}
+#red-btn-b {
+    margin: 395px 0px 0px 232px;
+}
+
+
+.gray-button {
+    position: absolute;
+    top: 491px;
+    background-color: #7D7571;
+    width: 45px;
+    height: 12px;
+    border-radius: 15px;
+    transform: rotate(-26deg);
+    box-shadow: 0px 0px 2px 1px black;
+}
+
+.gray-button span {
+    position: absolute;
+    font-size: 60%;
+    top: 17px;
+    left: 4px;
+    transform: scaleX(1.3)
+}
+
+.blue-text {
+    color: #2f3567;
+}
+
+.red-button span {
+    font-size: 68%;
+    font-weight: bolder;
+    position: absolute;
+    top: 51px;
+    left: 36px;
+    transform: rotate(-26deg);
+}
+
+#select-button {
+    left: 107px;
+}
+
+#start-button {
+    left: 170px;
+}
+
+
+
+.arrow-button {
+    --border: 3px;
+    --thickness: 32px;
+    --size: 89px;
+    --center: calc(var(--size)/2 - var(--thickness)/2);
+    position: absolute;
+    top: 363px;
+    left: 28px;
+    width: var(--size);
+    height: var(--size);
+}
+
+.arrow-button div {
+    position: absolute;
+    background-color: black;
+    border-radius: 5px;
+    border-bottom: var(--border) solid #3e3e3c;
+    border-left: var(--border) solid #232524;
+    border-right: var(--border) solid #232524;
+}
+
+#vert-up {
+    top: 0px;
+    left: var(--center);
+    width: var(--thickness);
+    height: calc( var(--border) + var(--size)/2 - var(--thickness)/2 );
+    border-top: var(--border) solid #3e3e3c;
+    border-bottom: var(--border) solid black;
+    border-bottom-left-radius: unset;
+    border-bottom-right-radius: unset;
+
+}
+#horiz {
+    left: 0px;
+    top: var(--center);
+    height: var(--thickness);
+    width: var(--size);
+    border-top: var(--border) solid #3e3e3c;
+}
+#vert-dn {
+    bottom: 0;
+    left: var(--center);
+    width: var(--thickness);
+    height: calc( var(--border) + var(--size)/2 - var(--thickness)/2 );
+    border-top: var(--border) solid black;
+    border-top-left-radius: unset;
+    border-top-right-radius: unset;
+}
+
+#arrow-button-circle {
+    --circle-size: 13px;
+    --circle-position: calc(var(--thickness) - var(--circle-size));
+    width: var(--circle-position);
+    height: var(--circle-position);
+    border-radius: var(--thickness);
+    top: calc(var(--size)/2 - var(--thickness)/2 + var(--circle-size)/2);
+    left: calc(var(--size)/2 - var(--thickness)/2 + var(--circle-size)/2);
+    border: unset;
+    background-color: rgba(193, 193, 177,0.4);
+    box-shadow: inset 0px -2px 6px 3px black;
+}

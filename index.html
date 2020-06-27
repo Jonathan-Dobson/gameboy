@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <img class="hidden" src="./gameboy.webp" alt="" srcset="">
+
+    <div id="container" class="gameboy-shape ">
+        <div id="gameboy-base" class="gameboy-shape ">
+            <div id="gameboy-base-inner" class="gameboy-shape">
+                <div id="screen-holder"></div>
+                <div id="lcd-screen"></div>
+            </div>
+        </div>
+        <div class="red-button" id='red-btn-a'>
+            <div class="red-button-inside"></div>
+            <span class="blue-text">A</span>
+        </div>
+        <div class="red-button" id='red-btn-b'>
+            <div class="red-button-inside"></div>
+            <span class="blue-text">B</span>
+        </div>
+
+        <div class="gray-button" id="start-button"><span class="blue-text">START</span></div>
+        <div class="gray-button" id="select-button"><span class="blue-text">SELECT</span></div>
+
+        <div class="arrow-button">
+            <div id="horiz"></div>
+            <div id="vert-dn"></div>
+            <div id="vert-up"></div>
+            <div id="arrow-button-circle"></div>
+        </div>
+    </div>
+    <!-- <script src="main.js"></script> -->
+</body>
+</html>
